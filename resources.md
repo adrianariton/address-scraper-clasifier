@@ -1,0 +1,4 @@
+[https://www.researchgate.net/publication/221157678_MapMarker_Extraction_of_Postal_Addresses_and_Associated_Information_for_General_Web_Pages](https://www.researchgate.net/publication/221157678_MapMarker_Extraction_of_Postal_Addresses_and_Associated_Information_for_General_Web_Pages)
+
+
+# https://www.researchgate.net/publication/221157678_MapMarker_Extraction_of_Postal_Addresses_and_Associated_Information_for_General_Web_Pages
