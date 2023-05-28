@@ -52,6 +52,11 @@ def unison_shuffled_copies(a, b):
     return a[p], b[p]
 
 def generate_addresses(perms, file, remove_not_needed=False):
+    
+    '''
+        This function is used to generate the dataset, from a random generator
+    '''
+    
     url = 'https://www.fakepersongenerator.com/random-address?new=refresh'
     
     if url == None or len(url) == 0:
@@ -100,7 +105,8 @@ def generate_addresses(perms, file, remove_not_needed=False):
         type = type.upper()
         
         if remove_not_needed:
-            if type in ['TIMEZONE', 'LATITUDE', 'LONGITUDE', 'MOBILE_NUMBER']:
+            print(f"TYPE: {type}")
+            if type in ['TIMEZONE', 'LATITUDE', 'LONGITUDE', 'MOBILE NUMBER', 'TELEPHONE NUMBER']:
                 continue
         
         out = out[0].attrs['value']

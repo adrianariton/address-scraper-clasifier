@@ -1,39 +1,35 @@
 
-> [outside] https://www.wyandottewinery.com/
-		['columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
-
-
 > [4] https://draftingdesign.com
+
+
+> [outside] https://www.wyandottewinery.com/
+		['columbus, ohio 43230']::[('43230', 'ZIPCODE')]
+
+
+> [1] https://embcmonroe.org
+		['503 maurice st. monroe, nc 28112.', '503 maurice street monroe, nc 28112']::[('503', 'ZIPCODE')]
+		['503 maurice st. monroe, nc 28112.', '503 maurice street monroe, nc 28112']::[('503 maurice street', 'STREET_ADDRESS'), ('28112', 'ZIPCODE')]
 
 
 > [outside] https://www.dillonmusic.com/
 		['new taiwan dollar', '325 fulton street woodbridge, nj 07095', 'new taiwan dollar', 'woodbridge, nj 07095']::[]
-		['new taiwan dollar', '325 fulton street woodbridge, nj 07095', 'new taiwan dollar', 'woodbridge, nj 07095']::[('325 fulton street', 'TELEPHONE_NUMBER'), ('07095', 'ZIPCODE')]
+		['new taiwan dollar', '325 fulton street woodbridge, nj 07095', 'new taiwan dollar', 'woodbridge, nj 07095']::[('325 fulton street', 'STREET_ADDRESS'), ('07095', 'ZIPCODE')]
 		['new taiwan dollar', '325 fulton street woodbridge, nj 07095', 'new taiwan dollar', 'woodbridge, nj 07095']::[]
 		['new taiwan dollar', '325 fulton street woodbridge, nj 07095', 'new taiwan dollar', 'woodbridge, nj 07095']::[('07095', 'ZIPCODE')]
-
-
-> [8] https://beerock.com
-
-
-> [1] https://embcmonroe.org
-		['503 maurice st. monroe, nc 28112.', '503 maurice street monroe, nc 28112']::[('503', 'ZIPCODE'), ('28112', 'ZIPCODE')]
-		['503 maurice st. monroe, nc 28112.', '503 maurice street monroe, nc 28112']::[('503', 'ZIPCODE'), ('28112', 'ZIPCODE')]
 
 
 > [7] https://romebeerfest.com
 
 
+> [16] https://kingdomtel.com
+		['is offering it for sale for an asking price of 26000 usd!']::[('26000', 'ZIPCODE'), ('!', 'STATE_FULL')]
+
+
+> [8] https://beerock.com
+
+
 > [3] https://sk4designs.com
 		['po box 3411 telluride, co 81435']::[('3411', 'ZIPCODE'), ('81435', 'ZIPCODE')]
-
-
-> [16] https://kingdomtel.com
-		['is offering it for sale for an asking price of 26000 usd!']::[('26000', 'ZIPCODE')]
-
-
-> [12] https://societyfortheblind.org
-		['sacramento, ca 95811']::[('95811', 'ZIPCODE')]
 
 
 > [4] https://draftingdesign.com/index.html
@@ -42,13 +38,32 @@
 > [19] https://clubk-9.com
 
 
+> [12] https://societyfortheblind.org
+		['sacramento, ca 95811']::[('95811', 'ZIPCODE')]
+
+
 > [17] https://triadstage.org
-		['the regional, nonprofit professional theater at 232 s. elm st. announced in june that it will return to life for its 20th season on oct. 4 with three plays, two concerts, a workshop and an effort to foster new, experimental work.']::[('at 232 s.', 'STREET_NAME'), ('4', 'ZIPCODE')]
+		['the regional, nonprofit professional theater at 232 s. elm st. announced in june that it will return to life for its 20th season on oct. 4 with three plays, two concerts, a workshop and an effort to foster new, experimental work.']::[('at 232 s.', 'STREET_NAME'), ('4 with three', 'STREET_ADDRESS'), ('new,', 'STATE')]
+
+
+> [4] https://draftingdesign.com/commercial.htm
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
+
+
+> [4] https://draftingdesign.com/industrial.htm
+		['ihi engineering australia pty ltd']::[]
 
 
 > [4] https://draftingdesign.com/bridges_tunnels.htm
-		['drawings for western section from king georges rd. to bexley rd. involving bridges at king georges rd., coolongata rd. and kingsgrove rd., as well as two pedestrian underpasses.', "cowper wharf road bridge, macquarie street ramp bridge, layouts for 'land bridge' at art gallery, pedestrian bridge over motorway and drawings for northern cut & cover tunnel section."]::[('at king georges rd', 'STREET_NAME')]
-		['drawings for western section from king georges rd. to bexley rd. involving bridges at king georges rd., coolongata rd. and kingsgrove rd., as well as two pedestrian underpasses.', "cowper wharf road bridge, macquarie street ramp bridge, layouts for 'land bridge' at art gallery, pedestrian bridge over motorway and drawings for northern cut & cover tunnel section."]::[]
+		['drawings for western section from king georges rd. to bexley rd. involving bridges at king georges rd., coolongata rd. and kingsgrove rd., as well as two pedestrian underpasses.', "cowper wharf road bridge, macquarie street ramp bridge, layouts for 'land bridge' at art gallery, pedestrian bridge over motorway and drawings for northern cut & cover tunnel section."]::[('at king', 'STREET_NAME')]
+		['drawings for western section from king georges rd. to bexley rd. involving bridges at king georges rd., coolongata rd. and kingsgrove rd., as well as two pedestrian underpasses.', "cowper wharf road bridge, macquarie street ramp bridge, layouts for 'land bridge' at art gallery, pedestrian bridge over motorway and drawings for northern cut & cover tunnel section."]::[("'", 'STATE_FULL'), ("'", 'STATE_FULL'), ('cut', 'STATE_FULL'), ('&', 'CITY')]
 
 
 > [20] https://katerisyracuse.com
@@ -58,220 +73,109 @@
 		['the st. kateri tekakwitha committee', 'monologue on the life of st. kateri tekakwitha', 'prayer to st. kateri for intercession', 'the st. kateri tekakwitha play']::[]
 
 
-> [4] https://draftingdesign.com/links.htm
-
-
 > [outside] https://www.seedsourceag.com/
 		['wayne, ne 68787']::[('68787', 'ZIPCODE')]
 
 
-> [4] https://draftingdesign.com
-
-
-> [4] https://draftingdesign.com/industrial.htm
-		['ihi engineering australia pty ltd']::[]
+> [outside] https://www.wyandottewinery.com/contact-us
+		['columbus, ohio 43230', 'columbus, ohio 43230']::[('43230', 'ZIPCODE')]
+		['columbus, ohio 43230', 'columbus, ohio 43230']::[('43230', 'ZIPCODE')]
 
 
 > [outside] https://rocksidewinery.orderport.net/signin.aspx
-		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('ohio', 'STATE_FULL'), ('43130', 'ZIPCODE')]
-
-
-> [4] https://draftingdesign.com/commercial.htm
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[('street - rozelle', 'MOBILE_NUMBER')]
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[('street - rozelle', 'MOBILE_NUMBER')]
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[('street - stanmore', 'MOBILE_NUMBER')]
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[('street - balmain', 'MOBILE_NUMBER')]
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[('street - north sydney', 'MOBILE_NUMBER')]
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[('street - cremorne', 'MOBILE_NUMBER')]
-		['red lion street - rozelle', 'factory / warehouse ricketty street mascot', 'alfred street - rozelle', 'temple street - stanmore', 'murdoch street - balmain', 'alfred street - north sydney', 'belgrave street - cremorne', 'talavera rd.']::[]
-
-
-> [4] https://draftingdesign.com/contact.htm
+		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('43130', 'ZIPCODE')]
 
 
 > [outside] https://www.cabwhp.org/
 		['inglewood, ca 90301']::[('90301', 'ZIPCODE')]
 
 
-> [4] https://draftingdesign.com/profile.htm
-
-
-> [outside] https://www.wyandottewinery.com/contact-us
-		['columbus, ohio 43230', 'columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
-		['columbus, ohio 43230', 'columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
-
-
-> [4] https://draftingdesign.com/resume.htm
-		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[]
-		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[]
-		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[]
-		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[("'", 'CITY')]
-
-
 > [outside] https://www.planethomepage.com.au/
-
-
-> [4] https://draftingdesign.com/services.htm
 
 
 > [outside] https://www.facebook.com/WyandotteWinery/
 
 
-> [outside] https://wyandottewinery.orderport.net/terms-of-use
-
-
-> [outside] https://www.perfectsearchinc.com/
-
-
 > [outside] https://www.wyandottewinery.com/event-calendar
-		['columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
+		['columbus, ohio 43230']::[('43230', 'ZIPCODE')]
 
 
-> [outside] https://rocksidewinery.orderport.net/wines/Rockside-Wines
-		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('ohio', 'STATE_FULL'), ('43130', 'ZIPCODE')]
+> [outside] https://rocksidewinery.orderport.net/newsletter
+		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('43130', 'ZIPCODE')]
 
 
 > [outside] https://www.tripadvisor.com/Attraction_Review-g50226-d1632699-Reviews-Wyandotte_Winery-Columbus_Ohio.html
-		['flea & street markets in columbus']::[]
-
-
-> [outside] https://www.rocksidewinery.com/river-cruise-2024
-		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('ohio', 'STATE_FULL'), ('43130', 'ZIPCODE')]
-
-
-> [outside] https://www.wyandottewinery.com/cutom-labels
-		['columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
-
-
-> [outside] https://accounts.google.com/v3/signin/identifier?dsh=S419960301%3A1685265215373678&continue=https%3A%2F%2Fplus.google.com%2F%2BWyandottewinery&followup=https%3A%2F%2Fplus.google.com%2F%2BWyandottewinery&ifkv=Af_xneG8sy0aRZwHrIYURnXWbjLI_oFBlovWQPto9pj2QSzDmzut4XfNBItZmKpRG6cpeIw-SuETdg&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin
-
-
-> [outside] https://www.wyandottewinery.com/private-events
-		['columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
+		['flea & street markets in columbus']::[('&', 'CITY')]
 
 
 > [outside] https://www.wyandottewinery.com/wine-club
-		['columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
+		['columbus, ohio 43230']::[('43230', 'ZIPCODE')]
+
+
+> [outside] https://www.wyandottewinery.com/cutom-labels
+		['columbus, ohio 43230']::[('43230', 'ZIPCODE')]
+
+
+> [4] https://draftingdesign.com/links.htm
+
+
+> [4] https://draftingdesign.com/profile.htm
 
 
 > [outside] https://www.wyandottewinery.com/pictures
-		['columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
+		['columbus, ohio 43230']::[('43230', 'ZIPCODE')]
+
+
+> [outside] https://wyandottewinery.orderport.net/terms-of-use
+
+
+> [outside] https://www.rocksidewinery.com/river-cruise-2024
+		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('43130', 'ZIPCODE')]
+
+
+> [outside] https://www.wyandottewinery.com/private-events
+		['columbus, ohio 43230']::[('43230', 'ZIPCODE')]
+
+
+> [4] https://draftingdesign.com/services.htm
+
+
+> [4] https://draftingdesign.com/contact.htm
+
+
+> [outside] https://rocksidewinery.orderport.net/wines/Rockside-Wines
+		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('43130', 'ZIPCODE')]
 
 
 > [outside] https://www.wyandottewinery.com/about
-		["robin tries very hard to use ohio grown fruit whenever possible. other grape or fruit varieties that don't grow well in ohio are sourced from other places such as california, new york, and as far away as chile.", 'columbus, ohio 43230']::[("don't grow", 'STREET_NAME'), ('in', 'STATE'), ('as california, new', 'STREET_NAME')]
-		["robin tries very hard to use ohio grown fruit whenever possible. other grape or fruit varieties that don't grow well in ohio are sourced from other places such as california, new york, and as far away as chile.", 'columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
+		["robin tries very hard to use ohio grown fruit whenever possible. other grape or fruit varieties that don't grow well in ohio are sourced from other places such as california, new york, and as far away as chile.", 'columbus, ohio 43230']::[('california', 'STATE_FULL')]
+		["robin tries very hard to use ohio grown fruit whenever possible. other grape or fruit varieties that don't grow well in ohio are sourced from other places such as california, new york, and as far away as chile.", 'columbus, ohio 43230']::[('43230', 'ZIPCODE')]
+
+
+> [outside] https://www.rocksidewinery.com/
+		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('43130', 'ZIPCODE')]
+
+
+> [outside] https://www.wyandottewinery.com
+		['columbus, ohio 43230']::[('43230', 'ZIPCODE')]
 
 
 > [outside] https://www.truesdail.com/
 
 
-> [outside] https://www.wyandottewinery.com
-		['columbus, ohio 43230']::[('ohio', 'STATE_FULL'), ('43230', 'ZIPCODE')]
+> [outside] https://www.perfectsearchinc.com/
 
 
-> [outside] https://rocksidewinery.orderport.net/newsletter
-		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('ohio', 'STATE_FULL'), ('43130', 'ZIPCODE')]
+> [4] https://draftingdesign.com
 
 
-> [outside] https://www.rocksidewinery.com/
-		['2363 lancaster newark rd ne - lancaster, ohio 43130']::[('2363', 'ZIPCODE'), ('ohio', 'STATE_FULL'), ('43130', 'ZIPCODE')]
+> [4] https://draftingdesign.com/resume.htm
+		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[('l', 'ZIPCODE')]
+		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[('l', 'ZIPCODE')]
+		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[]
+		['ihi engineering australia p/l', 'ihi engineering australia p/l', 'ihi engineering australia pty ltd', "preparation of drawings for 'cowper wharf road' bridge - 'macquarie street ramp' bridge and for northern cut & cover tunnel section."]::[("'", 'STATE_FULL'), ("'", 'STATE_FULL'), ("'", 'STATE_FULL'), ("'", 'STATE_FULL'), ('and for', 'STREET_NAME'), ('cut', 'STATE_FULL'), ('&', 'CITY')]
 
 
-> [22] https://greyhackle.com
-
-
-> [24] https://coastalpaddlecompany.com
-
-
-> [outside] https://www.triplecrownconstruction.com/
-		['1525 tilco drive, unit b-1, frederick, md 21704']::[('1525', 'ZIPCODE'), ('21704', 'ZIPCODE')]
-
-
-> [31] https://infometrica.com
-
-
-> [28] https://paramountlandtitle.com
-		['8904 sony lane, knoxville, tn 37923']::[('8904', 'ZIPCODE'), ('37923', 'ZIPCODE')]
-
-
-> [30] https://aiwoodwork.com
-		['generated in 0.311 seconds 56460 bytes batcached for 300 seconds']::[('in', 'STATE'), ('0.311', 'ZIPCODE'), ('56460', 'ZIPCODE')]
-
-
-> [34] https://neutresalon.com
-		['frederick, md 21701', 'frederick, md 21701']::[('21701', 'ZIPCODE')]
-		['frederick, md 21701', 'frederick, md 21701']::[('21701', 'ZIPCODE')]
-
-
-> [35] https://glacier.chat
-		['annapolis junction, md 20701']::[('20701', 'ZIPCODE')]
-
-
-> [23] https://wildandwanderful.com
-
-
-> [33] https://oauconsulting.com
-
-
-> [46] https://allmakeappliancerepair.com
-		['san francisco, ca 94132']::[('94132', 'ZIPCODE')]
-
-
-> [outside] https://www.newandblue.com/
-
-
-> [outside] https://www.plentyconsulting.com/
-		['613 franklin street, suite a', 'michigan city, in 46360', '84098']::[('613 franklin street', 'TELEPHONE_NUMBER')]
-		['613 franklin street, suite a', 'michigan city, in 46360', '84098']::[('46360', 'ZIPCODE')]
-		['613 franklin street, suite a', 'michigan city, in 46360', '84098']::[('84098', 'ZIPCODE')]
-
-
-> [outside] https://www.casepaper.com/
-		['harrison, ny 10528', 'philadelphia, pa 19134', 'chicago, il 60609', 'high point, nc 27263', 'miami, fl 33167', 'rancho cucamonga, ca 91730']::[('10528', 'ZIPCODE')]
-		['harrison, ny 10528', 'philadelphia, pa 19134', 'chicago, il 60609', 'high point, nc 27263', 'miami, fl 33167', 'rancho cucamonga, ca 91730']::[]
-		['harrison, ny 10528', 'philadelphia, pa 19134', 'chicago, il 60609', 'high point, nc 27263', 'miami, fl 33167', 'rancho cucamonga, ca 91730']::[('60609', 'ZIPCODE')]
-		['harrison, ny 10528', 'philadelphia, pa 19134', 'chicago, il 60609', 'high point, nc 27263', 'miami, fl 33167', 'rancho cucamonga, ca 91730']::[('27263', 'ZIPCODE')]
-		['harrison, ny 10528', 'philadelphia, pa 19134', 'chicago, il 60609', 'high point, nc 27263', 'miami, fl 33167', 'rancho cucamonga, ca 91730']::[('33167', 'ZIPCODE')]
-		['harrison, ny 10528', 'philadelphia, pa 19134', 'chicago, il 60609', 'high point, nc 27263', 'miami, fl 33167', 'rancho cucamonga, ca 91730']::[('91730', 'ZIPCODE')]
-
-
-> [outside] https://www.persianbijar.com/
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('at 1-', 'STREET_NAME'), ('844-650-0011', 'MOBILE_NUMBER')]
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('50', 'CITY'), ('at the university of wisconsin in madison for engineering.', 'STREET_NAME')]
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('1972', 'ZIPCODE'), ('no longer did people have to', 'STREET_NAME')]
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('’s', 'ZIPCODE'), ('and oriental rugs', 'STREET_NAME'), ('and free delivery to', 'STREET_NAME'), ('’s', 'STATE_FULL'), ('365 days a', 'TELEPHONE_NUMBER')]
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('’s', 'ZIPCODE'), ('and oriental rugs', 'STREET_NAME'), ('and free delivery to', 'STREET_NAME'), ('’s', 'STATE_FULL'), ('365 days a', 'TELEPHONE_NUMBER')]
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('and oriental rugs', 'STREET_NAME')]
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('and output of', 'STREET_NAME')]
-		['including the largest selection of bijars outside iran | call us at 1-844-650-0011', 'albert borokhim was born of iranian descent from a family with a deep and honorable history in the rug business in iran. he immigrated to the u.s. over 50 years ago to go to school at the university of wisconsin in madison for engineering.', 'after falling in love with madison, albert was eventually persuaded by friends and family to open his signature store. his first store opened on monroe street in 1972. a favorite neighborhood for madisonians, monroe street became an even more interesting neighborhood with the great rugs albert was able to bring into the area. no longer did people have to purchase the run of the mill quality rugs and flooring, they could finally have rugs rich in tradition, heritage, and quality.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'city_and_state’s best option for persian rugs and oriental rugs for sale. direct and free delivery to our clients in city_and_state. about our company. with an substantial selection of kazak, heriz rugs, kashan, gabeh, kashkuli, and tabriz rugs, we can help you discover rugs that you will appreciate for years to come. in addition to those rugs, we supply the nation’s largest choice of bijar rugs. with purchasing agents in iran 365 days a year, we are able to obtain almost anything to match your taste or current oriental rugs on your floors. some of our designs include floral, medallion with floral themes, geometric, medallion with geometric themes, medallion with open field, prayer rugs, animal rugs, and scenic rugs.', 'persian rugs and oriental rugs are a accurate representation of the ancient persian art and culture. the genuine persian rugs and handmade oriental rugs are from iran and the majority of the times you’ll find imitation of the exact same from countries like india, pakistan, turkey and china but always keep in mind that authentic persian rugs and persian carpets are made in iran.', 'the exquisite rugs and carpets are in excellent demand from all over the globe and the big population weavers in iran who earn their living by producing these decorative pieces meet this vast requirement, which caters to international and domestic requirements. every persian rug and carpet is really a unique and output of diverse creativity that tends to make it so popular and also the original piece is deservedly expensive. if you would like to add a touch of luxury to your house or workplace the persian-rugs or carpets will not just do that.', 'before really involving in the procedure of buying/owning persian rugs and persian carpets one has to become aware from the basics of an original persian-rug or carpet. the very first thing which you have already been informed is the fact that an original persian-rug/carpet is always a make of iran and also the rest you find within the market is an imitation absolutely nothing more. second persian rugs and persian carpets are costly items, so check out your spending budget before purchasing. the following are few suggestions to make your shopping a bit easier and handy.']::[('an original persian', 'STREET_NAME')]
-
-
-> [outside] https://www.seniorcareagencyny.com/
-		['levittown, ny 11756']::[('11756', 'ZIPCODE')]
-
-
-> [outside] https://www.your-doctor.org/
-		['call alicia via +30 21 123447-27 as ask for the lcg greece team.', 'excellence in andrology for people in the united arab emirates & worldwide', 'c/o lcg greece, 16 kifissias ave, 11526 athens, gr - no in-person treatments at this location!', '115 26 athens, greece, eu', 'αυτή η διεθνής πρακτική της τηλεϊατρικής έχει μόνο μία διοίκηση στην ελλάδα. όταν μεμονωμένα μέλη της κοινοπραξίας έχουν άδεια άσκησης ιατρικού επαγγέλματος στην ελλάδα, οι ενέργειές τους είναι ανεξάρτητες από το lazar medical consortium group, lcg greece ή lazar, seideman & smith.']::[('21', 'ZIPCODE'), ('123447-27 as ask for the lcg greece', 'TELEPHONE_NUMBER')]
-		['call alicia via +30 21 123447-27 as ask for the lcg greece team.', 'excellence in andrology for people in the united arab emirates & worldwide', 'c/o lcg greece, 16 kifissias ave, 11526 athens, gr - no in-person treatments at this location!', '115 26 athens, greece, eu', 'αυτή η διεθνής πρακτική της τηλεϊατρικής έχει μόνο μία διοίκηση στην ελλάδα. όταν μεμονωμένα μέλη της κοινοπραξίας έχουν άδεια άσκησης ιατρικού επαγγέλματος στην ελλάδα, οι ενέργειές τους είναι ανεξάρτητες από το lazar medical consortium group, lcg greece ή lazar, seideman & smith.']::[]
-		['call alicia via +30 21 123447-27 as ask for the lcg greece team.', 'excellence in andrology for people in the united arab emirates & worldwide', 'c/o lcg greece, 16 kifissias ave, 11526 athens, gr - no in-person treatments at this location!', '115 26 athens, greece, eu', 'αυτή η διεθνής πρακτική της τηλεϊατρικής έχει μόνο μία διοίκηση στην ελλάδα. όταν μεμονωμένα μέλη της κοινοπραξίας έχουν άδεια άσκησης ιατρικού επαγγέλματος στην ελλάδα, οι ενέργειές τους είναι ανεξάρτητες από το lazar medical consortium group, lcg greece ή lazar, seideman & smith.']::[('at this location!', 'STREET_NAME')]
-		['call alicia via +30 21 123447-27 as ask for the lcg greece team.', 'excellence in andrology for people in the united arab emirates & worldwide', 'c/o lcg greece, 16 kifissias ave, 11526 athens, gr - no in-person treatments at this location!', '115 26 athens, greece, eu', 'αυτή η διεθνής πρακτική της τηλεϊατρικής έχει μόνο μία διοίκηση στην ελλάδα. όταν μεμονωμένα μέλη της κοινοπραξίας έχουν άδεια άσκησης ιατρικού επαγγέλματος στην ελλάδα, οι ενέργειές τους είναι ανεξάρτητες από το lazar medical consortium group, lcg greece ή lazar, seideman & smith.']::[('115 26 athens, greece, eu', 'MOBILE_NUMBER')]
-		['call alicia via +30 21 123447-27 as ask for the lcg greece team.', 'excellence in andrology for people in the united arab emirates & worldwide', 'c/o lcg greece, 16 kifissias ave, 11526 athens, gr - no in-person treatments at this location!', '115 26 athens, greece, eu', 'αυτή η διεθνής πρακτική της τηλεϊατρικής έχει μόνο μία διοίκηση στην ελλάδα. όταν μεμονωμένα μέλη της κοινοπραξίας έχουν άδεια άσκησης ιατρικού επαγγέλματος στην ελλάδα, οι ενέργειές τους είναι ανεξάρτητες από το lazar medical consortium group, lcg greece ή lazar, seideman & smith.']::[]
-
-
-> [36] https://systemadix.com
-		['• 240.479.7700 • 122 east patrick street, suite 120, frederick, md 21701']::[('• 122 east', 'STREET_NAME'), ('21701', 'ZIPCODE')]
-
-
-> [outside] https://www.seforensic.com/
-
-
-> [44] https://animaledzoocation.com
-
-
-> [outside] https://www.305painting.com/
-		['1020 ne 208th st.', '<span itemprop="postalcode">33179</span>']::[('1020', 'ZIPCODE'), ('ne', 'STATE')]
-		['1020 ne 208th st.', '<span itemprop="postalcode">33179</span>']::[('<span itemprop="postalcode">33179</span', 'TELEPHONE_NUMBER'), ('>', 'ZIPCODE')]
+> [outside] https://accounts.google.com/v3/signin/identifier?dsh=S-536864292%3A1685270161675693&continue=https%3A%2F%2Fplus.google.com%2F%2BWyandottewinery&followup=https%3A%2F%2Fplus.google.com%2F%2BWyandottewinery&ifkv=Af_xneEsJxQxSCVp9rZ1FE6uKXOMOoDdql38mKkmrHvXvLXphwSUvxxP5ljkNBeN1EP9dF0UFePP8A&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin
 
 

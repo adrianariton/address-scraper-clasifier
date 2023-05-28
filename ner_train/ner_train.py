@@ -7,7 +7,7 @@ from spacy.training.example import Example
 from tqdm import tqdm
 
 from data_logs.sentences2 import TRAINING_DATA2 as TRAIN_DATA_SEN
-from data_logs.gen3 import TRAINING_DATA2 as TRAIN_DATA
+from data_logs.gen4 import TRAINING_DATA2 as TRAIN_DATA
 from data import ALL_TRAINING_DATA
 
 TRAIN_DATA = TRAIN_DATA + TRAIN_DATA_SEN
@@ -15,7 +15,7 @@ TRAIN_DATA = TRAIN_DATA + TRAIN_DATA_SEN
 TEST_DATA = [
     ('60195 Glendale Heights Location 2021 Bloomingdale Rd Glendale Heights', {}),
     ('With Us Physical Address​ 503 Maurice Street Monroe NC 28112 Phone Numbers 1-704-283-6342', {}),
-    ('Leadership Training Contact Info 503 Maurice Street Monroe NC 28112 +1 704-283-6342 embcmonroe', {})
+    ('Leadership Training Contact Info 503 Maurice Street Monroe NC 28112 +1 704-283-6342 embcmonroe', {}),
     ('columbus, ohio 43230', {})
 ]
 

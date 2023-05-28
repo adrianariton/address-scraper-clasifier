@@ -15,7 +15,7 @@ def out_text_array(text_array, model):
         yield [(ent.text, ent.label_) for ent in doc.ents]
         
 def recognize_m(text_array):
-    return out_text_array(text_array, "./trained")
+    return out_text_array(text_array, "./models/trained")
 
 
 if __name__ == "__main__":
