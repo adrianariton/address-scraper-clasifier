@@ -9,7 +9,9 @@ flask --app berver.py run
 ```
 
 Output will be received as test in [output/NER_REC.txt](output/NER_REC.txt), and the intermadiary output will be available on the web page and also in [output/intermediary.txt](output/intermediary.txt)
-2.  With AddressSpider (a lot faster)
+
+
+## 2.  With AddressSpider (a lot faster)
 
 If you want to run in parralel and faster, run 
 ```bash
