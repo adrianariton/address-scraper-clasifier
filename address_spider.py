@@ -57,6 +57,10 @@ class AddressSpider(Spider):
             index = self.start_urls.index(f"https://{domain}")
         except:
             index = "outside"
+            
+        '''
+            Log to log_file
+        '''
         print(f"> [{index}] {response.url}", file=open("spider_logs/ADDRESSES.txt", 'a'))
         print(f"\t\ttokenized::recognized")
         for el in data:
@@ -66,6 +70,10 @@ class AddressSpider(Spider):
         urls = [l.url for l in links]
         self.depth -= 1
         
+        
+        '''
+            Crawl links
+        '''
         if self.depth > 0:
             for url in urls:
                 yield Request(url, callback=self.parse)

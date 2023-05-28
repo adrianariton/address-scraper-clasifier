@@ -302,6 +302,9 @@ def ex(url, first=0, parsed_next_links=[], base="", max_iter = 3, parsing_fct=pa
     for link in BeautifulSoup(webpage, 'html.parser', parse_only=SoupStrainer('a')):
         next_links += [link]
 
+    '''
+        Crawl link
+    '''
     for link in next_links:
         if link.has_attr('href'):
             #print(link['href'])
@@ -366,6 +369,9 @@ def run(max_urls, impidx=-1):
     failed_urls = 0
     address_not_found = 0
     import pandas as pd
+    '''
+        Parse parquet
+    '''
     urls = pd.read_parquet('list.parquet', engine='pyarrow')
     print(urls)
     addresses = []
@@ -391,7 +397,9 @@ def run(max_urls, impidx=-1):
         print("^^^^^^^^^")
         print(address)
         print("^^^^^^^^^")
-
+        '''
+            Try all combinations of http/https to make sure it works!
+        '''
         if address == None:
             continue
         if msg == 'b':
