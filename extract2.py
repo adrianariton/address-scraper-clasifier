@@ -11,6 +11,9 @@ import nltk
 nltk.download('punkt')
 
 def scrape_page(url):
+    '''
+        Testing function for webscraping (unused)
+    '''
     print ("URL: " + url)
     r = requests.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
@@ -23,9 +26,15 @@ def scrape_page(url):
         print ("Done")
 
 def parse_countries():
+    '''
+        A list of countries
+    '''
     return open("countries.txt", "r")
 
 def parse_states():
+    '''
+        A list of US states
+    '''
     keys = []
     for line in open('states.csv', 'r'):
         keys += [line.split(',')[0].strip().upper(), line.split(',')[1].strip().upper()]
@@ -33,9 +42,15 @@ def parse_states():
     return keys
 
 def parse_suffixes():
+    '''
+        Returns the suffixes that usualy appear in addreses
+    '''
     return ['st', 'street', 'bvd', 'boulevard', 'ave', 'avenue', 'rd', 'road', 'st.', 'rd.', 'bvd.', 'ave.']
 
 def parse_directions():
+    '''
+        Directions (N, S, E ,V) and others
+    '''
     return ['north', 'south', 'west', 'east', 'N', 'S', 'E', 'W', 'n', 'e', 'v']
 
 def bad_token(tok):
@@ -123,6 +138,13 @@ def parsing_functions_addresses(soup):
     return keyed_tokens
 
 def strict_segment_positions(pos, toks):
+    '''
+        This function returns the nearest segment positions 
+        of a token according to the following rules:
+            suffixes: 6 before, 2 after
+            countries, directions: 2 before, 2 after
+            states: 2 before, 4 after
+    '''
     if not (pos < len(toks) and pos >= 0):
         return (0, 0)
     
@@ -137,6 +159,12 @@ def strict_segment_positions(pos, toks):
     return (0,0)
 
 def segment_pos(pos, toks):
+    '''
+        This function joins overlapping segments
+        of a given token.
+        The segments will be used for NER after cleaning
+        by function segment and _Segment
+    '''
     i = pos
     m, n = strict_segment_positions(pos, toks)
     m = pos - m
@@ -163,6 +191,9 @@ def segment_pos(pos, toks):
     return pos - m, n - pos
 
 def _segment(pos, m, n, toks):
+    '''
+        Segment to string
+    '''
     i = pos - m
     i = max(0, i)
     ans = ''
@@ -174,6 +205,15 @@ def _segment(pos, m, n, toks):
     return ans.strip()
 
 def segment(pos, toks):
+    '''
+        This function returns the nearest segment positions 
+        of a token according to the following rules:
+            suffixes: 6 before, 2 after
+            countries, directions: 2 before, 2 after
+            states: 2 before, 4 after
+        it joins overlaping segments and returns the tokens
+        joined in a string if existent.
+    '''
     m, n = segment_pos(pos, toks)
     if m == 0 and n == 0:
         return ''
@@ -199,6 +239,13 @@ def new_parsing_fct(soup):
 
 depth = 1
 def ex(url, first=0, parsed_next_links=[], base="", max_iter = 3, parsing_fct=parsing_functions_addresses):
+    '''
+        Reccursive (quite slow) function that reccursively scrapes a page
+        then it's linked pages to return near-address strings (segments).
+        
+        For better performance, use address_spider.py (view README.md)
+    '''
+    
     x = (url.split('/'))
     x = [i for i in x if i != None and len(i) > 0]
     if max_iter < 0:
@@ -312,6 +359,10 @@ def zips():
 
 
 def run(max_urls, impidx=-1):
+    '''
+        Run adddress extraction through all the urls of the parquet file (limited
+        by max_urls).
+    '''
     failed_urls = 0
     address_not_found = 0
     import pandas as pd

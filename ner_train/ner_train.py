@@ -16,6 +16,7 @@ TEST_DATA = [
     ('60195 Glendale Heights Location 2021 Bloomingdale Rd Glendale Heights', {}),
     ('With Us Physical Address​ 503 Maurice Street Monroe NC 28112 Phone Numbers 1-704-283-6342', {}),
     ('Leadership Training Contact Info 503 Maurice Street Monroe NC 28112 +1 704-283-6342 embcmonroe', {})
+    ('columbus, ohio 43230', {})
 ]
 
 
@@ -23,9 +24,7 @@ model = None
 output_dir=Path("./")
 n_iter=100
 
-
-
-#load the model
+# load the model
 
 if model is not None:
     nlp = spacy.load(model)  
