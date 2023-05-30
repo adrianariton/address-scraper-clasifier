@@ -1,10 +1,15 @@
 # Models
 
 v0.1 -> only gen
+
 v0.2 -> gen + sh
+
 v0.3 -> gen + sh + cut 
+
 v0.4? -> v0.3 + (cut + sh)
+
 v0.4.5? -> v0.4 + sen??
+
 v0.5? -> with random words and sentences
 
 # Use
