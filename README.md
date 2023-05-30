@@ -57,8 +57,8 @@ See mode about models in the models folder!
 
 # Dataset generation
 
-Using a random address generator, i created a script which takes the needed information, and addapts it to my configuragtion (either short addreses, or long , of shortcutted),
-see more in ner_train and ner_train/data_logs
+Using a random address generator, I created a script which takes the needed information, and adapts it to my configuragtion (either short addreses, or long , of shortcutted),
+see more in ner_train and ner_train/data_logs.
 
 
 # Thinking Process
