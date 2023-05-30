@@ -2,7 +2,7 @@
 ## How to run:
 
 You have two possibilities!
-1.  Un paralelized script (quite slow but shows a lot of the thought process i went through). Not reccmended, but highly recommende to go through the code!
+1.  Un paralelized script (quite slow but shows a lot of the thought process i went through). Not reccomended, but highly reccommended to go through the code!
 ```bash
 ## From ./Task1
 flask --app berver.py run
@@ -55,6 +55,12 @@ Check out [ner_train](ner_train)
 
 See mode about models in the models folder!
 
+# Dataset generation
+
+Using a random address generator, i created a script which takes the needed information, and addapts it to my configuragtion (either short addreses, or long , of shortcutted),
+see more in ner_train and ner_train/data_logs
+
+
 # Thinking Process
 
 First of all the website is parsed and some rough candidates for zipcode, country, county and directions are identified and marked as tokens.
@@ -66,5 +72,3 @@ If ran with option 1. the output of this operation can be observed on the main p
 Afterwards, using the pretrained model (see [ner_train](ner_train)), the wanted tokens are identified!
 
 If ran with 2., the output can be viewed in [spider_logs/ADDRESSES.txt](spider_logs/ADDRESSES.txt)
-
-#
