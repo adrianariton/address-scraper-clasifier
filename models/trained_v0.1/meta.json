@@ -18,10 +18,14 @@
   },
   "labels":{
     "ner":[
+      "BUILDING",
       "CITY",
       "STATE",
       "STATE_FULL",
       "STREET_ADDRESS",
+      "STREET_NAME",
+      "SUITE",
+      "ZIP",
       "ZIPCODE"
     ]
   },

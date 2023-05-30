@@ -5,7 +5,7 @@ from extract2 import parsing_functions_addresses, new_parsing_fct
 import pandas as pd
 from ner import recognize_m
 from urllib.parse import urlparse
-
+map = {}
 class AddressSpider(Spider):
     '''
         Address Spider scrapes the list of given urls 
@@ -53,6 +53,16 @@ class AddressSpider(Spider):
         
         index =  -1
         domain = urlparse(response.url).netloc
+        print("\n\n\n\n")
+        print(domain)
+        print("\n\n\n\n")
+        if domain not in map:
+            map[domain] = 0
+        map[domain] += 1
+        
+        if map[domain] > 10:
+            return
+        
         try:
             index = self.start_urls.index(f"https://{domain}")
         except:

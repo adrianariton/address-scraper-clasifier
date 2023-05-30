@@ -6,11 +6,16 @@ import spacy
 from spacy.training.example import Example
 from tqdm import tqdm
 
+remove = ",/&;!?><\'\"[]{}()"
+
 def out_text_array(text_array, model):
     nlp = spacy.load(model)  
     print("Loaded model '%s'" % model)
     
     for text in text_array:
+        for lit in remove:
+            text = text.replace(lit, '')
+        text = text.lower()
         doc = nlp(text)
         yield [(ent.text, ent.label_) for ent in doc.ents]
         

@@ -6,11 +6,26 @@ import spacy
 from spacy.training.example import Example
 from tqdm import tqdm
 
+'''
+    Script used for model training!
+    
+    Run as such:
+    
+    Return folder: `trained`
+    which can then be renamed and copied into `/models`.
+    
+    Sampled datasets, use whateve you like.
+    Disclaimer: {gen#x | x < 5} are bugged
+'''
+
 from data_logs.sentences2 import TRAINING_DATA2 as TRAIN_DATA_SEN
-from data_logs.gen4 import TRAINING_DATA2 as TRAIN_DATA
+from data_logs.gen6 import TRAINING_DATA2 as TRAIN_DATA
+from data_logs.sh1 import TRAINING_DATA2 as SH_DATA
+from data_logs.cut1 import TRAINING_DATA2 as CUT_DATA
+from data_logs.cush import TRAINING_DATA2 as CUSH_DATA
 from data import ALL_TRAINING_DATA
 
-TRAIN_DATA = TRAIN_DATA + TRAIN_DATA_SEN
+TRAIN_DATA = TRAIN_DATA + SH_DATA + CUT_DATA
 
 TEST_DATA = [
     ('60195 Glendale Heights Location 2021 Bloomingdale Rd Glendale Heights', {}),

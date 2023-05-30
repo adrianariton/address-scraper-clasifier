@@ -1,3 +1,25 @@
+'''
+    Data software script.
+    
+    How it works?
+    
+    Make requests to https://www.fakepersongenerator.com/random-address?new=refresh,
+    and process the output as neede using the config variable
+    
+        | config = ['SHORT'] -- sh#.py               -- no street
+        | config = [] -- gen#.py                     -- all
+        | config = ['CUT', 'STREET_ZIP'] -- cush#.py -- street and zip with shorcut
+        |                                               (street -> st.)
+        | etc
+
+    Run from base folder:
+    
+        | python3 ner_train/data_scrape.py
+    
+    Output will be generated in `data2.py`, an can be copied in the data_logs folder
+'''
+
+
 from bs4 import BeautifulSoup, SoupStrainer
 import re
 from flask import Flask
@@ -15,6 +37,10 @@ from selenium import webdriver
 from requests_html import HTMLSession
 from random import randint
 session = HTMLSession()
+
+# config = ['SHORT'] -- sh#.py
+# config = [] -- gen#.py
+config = ['CUT', 'STREET_ZIP']
 
 random_words = [
     'with', 'at', 'by', 'to', 'in', 'for', 'from', 'of', 'on',
@@ -105,11 +131,32 @@ def generate_addresses(perms, file, remove_not_needed=False):
         type = type.upper()
         
         if remove_not_needed:
-            print(f"TYPE: {type}")
+            # print(f"TYPE: {type}")
             if type in ['TIMEZONE', 'LATITUDE', 'LONGITUDE', 'MOBILE NUMBER', 'TELEPHONE NUMBER']:
+                i+=1
                 continue
-        
+        if 'SHORT' in config:
+            if type in ['STREET ADDRESS', 'ZIPCODE']:
+                i+=1
+                continue
+            
+        if 'STREET_ZIP' in config:
+            if type not in ['STREET ADDRESS', 'ZIPCODE']:
+                i+=1
+                continue
+            
+            
+            
         out = out[0].attrs['value']
+        if 'CUT' in config:
+            out = out.lower().replace('road', 'rd.')
+            out = out.lower().replace('street', 'st.')
+            out = out.lower().replace('terrace', 'bvd.')
+            out = out.lower().replace('lane', 'bvd.')
+            out = out.lower().replace('drive', 'dr.')
+
+
+
         type = type.replace(' ', '_')
         print(type, out)
         
@@ -121,8 +168,10 @@ def generate_addresses(perms, file, remove_not_needed=False):
     if (len(names) == 0):
         return -1
     
+    print(props, names)
+    
     for i in range(perms):
-        props, names = unison_shuffled_copies(numpy.array(props), numpy.array(names))
+        # props, names = unison_shuffled_copies(numpy.array(props), numpy.array(names))
         str = ' '.join(names)
         l = 0
         i = 0
@@ -148,9 +197,8 @@ def generate_addresses(perms, file, remove_not_needed=False):
 f = open('ner_train/data2.py', 'w') 
 print('TRAINING_DATA2 = [', file=f) 
 
-for i in range(100):   
-    print('AAA')
-    x = generate_addresses(perms=10, file=f, remove_not_needed=True)
+for i in range(100):
+    x = generate_addresses(perms=1, file=f, remove_not_needed=True)
     if x == -1:
         print('Skipped verif, sleeping for 10 secs')
         time.sleep(10)
