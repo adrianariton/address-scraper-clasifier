@@ -53,6 +53,8 @@ Check out [ner_train](ner_train)
 
 ```
 
+See mode about models in the models folder!
+
 # Thinking Process
 
 First of all the website is parsed and some rough candidates for zipcode, country, county and directions are identified and marked as tokens.
