@@ -20,6 +20,9 @@ def format(address_array, header=""):
 
 @app.route("/") 
 def home():
+    '''
+        Max urls is the number of urls to be sampled
+    '''
     addresses, failed, empty = run(max_urls=50)
     print(addresses)
     head = f"<span>Failed: {failed} | Empty: {empty}</span>"
