@@ -4,7 +4,6 @@
 You have two possibilities!
 1.  Un paralelized script (quite slow but shows a lot of the thought process i went through). Not reccomended, but highly reccommended to go through the code!
 ```bash
-## From ./Task1
 flask --app berver.py run
 ```
 
